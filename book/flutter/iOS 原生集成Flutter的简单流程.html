@@ -1,0 +1,634 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Flutter快速集成 · GitBook 使用教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="eric_dayang">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../cocoaPods/cocoaPods.html" />
+    
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    <script src="../gitbook/gitbook-plugin-graph/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-graph/function-plot.js"></script>    
+
+    <link href="http://gitbook.zhangjikai.com/rss" title="GitBook 使用教程" rel="alternate" type="application/rss+xml" />
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"zhangjikai/gitbook-use","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.baidu.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1/">
+            
+                <a href="../1/">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    版本控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../git/git_to_git.html">
+            
+                <a href="../git/git_to_git.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    如何把Git 从一个Git 仓库切换到另一个Git仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    cocoaPods
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../cocoaPods/cocoaPods.html">
+            
+                <a href="../cocoaPods/cocoaPods.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    私有仓库的创建和使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="iOS 原生集成Flutter的简单流程.html">
+            
+                <a href="iOS 原生集成Flutter的简单流程.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    Flutter快速集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Flutter快速集成</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5982;&#x4F55;&#x5728;ios&#x4E2D;&#x5FEB;&#x901F;&#x96C6;&#x6210;flutter"><a name="&#x5982;&#x4F55;&#x5728;ios&#x4E2D;&#x5FEB;&#x901F;&#x96C6;&#x6210;flutter" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x4F55;&#x5728;ios&#x4E2D;&#x5FEB;&#x901F;&#x96C6;&#x6210;flutter"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5982;&#x4F55;&#x5728;iOS&#x4E2D;&#x5FEB;&#x901F;&#x96C6;&#x6210;Flutter</h2>
+<blockquote>
+<p>&#x6458;&#x8981;&#xFF1A;</p>
+<p>&#x5982;&#x4F55;&#x5FEB;&#x901F;&#x96C6;&#x6210; Flutter &#x5230; &#x539F;&#x751F;&#x9879;&#x76EE;&#x3002;</p>
+<p>&#x96C6;&#x6210;&#x4E4B;&#x540E;&#x5982;&#x4F55;&#x4F7F;&#x7528;flutter&#x3002;</p>
+</blockquote>
+<hr>
+<h3 id="&#x4E00;&#x3001;&#x5982;&#x4F55;&#x5FEB;&#x901F;&#x96C6;&#x6210;"><a name="&#x4E00;&#x3001;&#x5982;&#x4F55;&#x5FEB;&#x901F;&#x96C6;&#x6210;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x5982;&#x4F55;&#x5FEB;&#x901F;&#x96C6;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;&#x5982;&#x4F55;&#x5FEB;&#x901F;&#x96C6;&#x6210;</h3>
+<p>&#x96C6;&#x6210;&#x7684;&#x65B9;&#x5F0F;&#x4E00;&#x822C;&#x6709;&#x4E24;&#x79CD;&#xFF1A;&#x624B;&#x52A8;&#x5BFC;&#x5165;&#x548C;pods &#x81EA;&#x52A8;&#x5BFC;&#x5165;&#x3002;</p>
+<p>&#x624B;&#x52A8;&#x5BFC;&#x5165;&#x5C31;&#x4E0D;&#x7528;&#x591A;&#x8BF4;&#x4E86;&#x76F4;&#x63A5;&#x628A;&#x76F8;&#x5E94;&#x7684;framework &#x62D6;&#x5165;&#x9879;&#x76EE;&#x5373;&#x53EF;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x662F;&#x6BD4;&#x8F83;&#x7B28;&#x91CD;&#x7684;&#xFF08;&#x4F46;&#x4E5F;&#x6709;&#x5927;&#x795E;&#x81EA;&#x5DF1;&#x5199;&#x811A;&#x672C;&#x6765;&#x5B9E;&#x73B0;&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x8BF4;&#x8BF4;&#x5982;&#x4F55;&#x4F7F;&#x7528;pods &#x5FEB;&#x901F;&#x96C6;&#x6210;&#x5427;&#x3002;</p>
+<h5 id="1&#x3001;&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x521B;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="1&#x3001;&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x521B;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x521B;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x521B;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h5>
+<pre class="language-"><code>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x4E09;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;
+Debug.xcconfig
+Release.xcconfig
+Flutter.xcconfig
+</code></pre><p>Debug.xcconfig</p>
+<pre class="language-"><code>#include &quot;Flutter.xcconfig&quot;
+#include &quot;Pods/Target Support Files/Pods-&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x7A0B;&#x540D;&#x5B57;/Pods-&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x7A0B;&#x540D;&#x5B57;.debug.xcconfig&quot;
+</code></pre><p>Release.xcconfig</p>
+<pre class="language-"><code>#include &quot;Flutter.xcconfig&quot;
+#include &quot;Pods/Target Support Files/Pods-&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x7A0B;&#x540D;&#x5B57;/Pods-&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x7A0B;&#x540D;&#x5B57;.debug.xcconfig&quot;
+</code></pre><p>Flutter.xcconfig</p>
+<pre class="language-"><code>#include &quot;../my_flutter/.ios/Flutter/Generated.xcconfig&quot;   // &#x9700;&#x8981;&#x6539;&#x6210;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x76EE;&#x5F55;
+ENABLE_BITCODE=NO   // &#x5173;&#x95ED;bitecdoe
+</code></pre><h5 id="2&#x3001;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5230;&#x5DE5;&#x7A0B;&#x4E2D;"><a name="2&#x3001;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5230;&#x5DE5;&#x7A0B;&#x4E2D;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5230;&#x5DE5;&#x7A0B;&#x4E2D;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5230;&#x5DE5;&#x7A0B;&#x4E2D;</h5>
+<pre class="language-"><code>PROJECT--&gt;info---&gt;Configurations &#x914D;&#x7F6E;&#x6210;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x6587;&#x4EF6;.xcconfig( &#x6709;iOS&#x5F00;&#x53D1;&#x7ECF;&#x9A8C;&#x7684;&#x5E94;&#x8BE5;&#x90FD;&#x80FD;&#x770B;&#x5F97;&#x61C2;)
+</code></pre><h5 id="3&#x3001;&#x6DFB;&#x52A0;&#x7F16;&#x8BD1;flutter&#x7684;&#x811A;&#x672C;"><a name="3&#x3001;&#x6DFB;&#x52A0;&#x7F16;&#x8BD1;flutter&#x7684;&#x811A;&#x672C;" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x6DFB;&#x52A0;&#x7F16;&#x8BD1;flutter&#x7684;&#x811A;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x6DFB;&#x52A0;&#x7F16;&#x8BD1;flutter&#x7684;&#x811A;&#x672C;</h5>
+<p>Target-&gt;Build Phases-&gt;Run Script &#x4E2D;&#x6DFB;&#x52A0;flutter&#x5305;&#x4E2D;&#x5DE5;&#x5177;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#x811A;&#x672C;&#xB7;<code>xcode_backend.sh</code>&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x5E72;&#x4E86;&#x90A3;&#x4E9B;&#x4E8B;&#x5462;&#xFF0C;&#x4E3B;&#x8981;&#x6709;&#x4E00;&#x4E0B;&#x51E0;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x5BFC;&#x5165;Flutter&#x5F15;&#x64CE;&#x7684;&#x5BF9;&#x5E94;&#x6A21;&#x5F0F;&#x7248;&#x672C;&#x3002;</li>
+<li>&#x7F16;&#x8BD1;Dart&#x4EE3;&#x7801;&#x4E3A;App.framework&#x3002;</li>
+<li>&#x7F16;&#x8BD1;flutter_assets&#xFF0C;&#x5E76;&#x5185;&#x5D4C;&#x5230;App.framework&#x3002;</li>
+<li>&#x590D;&#x5236;&#x8D44;&#x6E90;&#xFF0C;&#x5E76;&#x7B7E;&#x540D;</li>
+</ul>
+<p>&#x811A;&#x672C;&#x5982;&#x4E0B;</p>
+<pre class="language-"><code class="lang-shell">&quot;$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh&quot; build
+</code></pre>
+<p><code>FLUTTER_ROOT</code> &#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x662F;&#x5728;Generated.xcconfig &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x914D;&#x7684;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x751F;&#x6210;&#xFF0C;&#x6307;&#x5411;&#x7684;&#x662F;flutter SDK&#x6240;&#x5728;&#x7684;&#x66F4;&#x76EE;&#x5F55;&#x3002;</p>
+<h5 id="4&#x3001;&#x914D;&#x7F6E;pods-profile-&#x6587;&#x4EF6;"><a name="4&#x3001;&#x914D;&#x7F6E;pods-profile-&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#4&#x3001;&#x914D;&#x7F6E;pods-profile-&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001;&#x914D;&#x7F6E;PODS profile &#x6587;&#x4EF6;</h5>
+<p>&#x5148;&#x4E0A;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code class="lang-objective-c">flutter_application_path = &apos;../&apos;
+load File.join(flutter_application_path, &apos;.ios&apos;, &apos;Flutter&apos;, &apos;podhelper.rb&apos;)
+
+use_frameworks!
+
+target &apos;Runner&apos; do
+  install_flutter_engine_pod
+  install_flutter_plugin_pods flutter_application_path
+end
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x89E3;&#x91CA;&#x4E0B;&#xFF1A;</p>
+<p>&#x5176;&#x4E2D;&#x975E;&#x5E38;&#x5173;&#x952E;&#x7684;&#x662F;<code>podhelper</code> &#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5728;<code>.ios/Flutte/</code> &#x76EE;&#x5F55;&#x4E0B;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x6211;&#x4E0D;&#x505A;&#x5177;&#x4F53;&#x89E3;&#x91CA;&#xFF0C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x53EF;&#x4EE5;&#x7814;&#x7A76;&#x4E0B;&#xFF0C;</p>
+<p>&#x9996;&#x5148;&#x662F;&#x5BFC;&#x5165;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230;&#x91CC;&#x8FB9;&#x7684;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#x3002;</p>
+<p><code>install_flutter_engine_pod</code> &#x65B9;&#x6CD5;&#xFF1A;</p>
+<blockquote>
+<p>&#x5176;&#x4F5C;&#x7528;&#x5F88;&#x7B80;&#x5355;&#xFF1A;<code>pod &apos;Flutter</code>, &#x5C31;&#x662F;Flutter&#x5F15;&#x64CE;&#x5F53;&#x505A;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;pod &#x5230;&#x6211;&#x4EEC;&#x7684;&#x5DE5;&#x7A0B;&#x4E2D;&#x53BB;&#x3002;</p>
+</blockquote>
+<p><code>install_flutter_plugin_pods</code>  &#x65B9;&#x6CD5;&#xFF1A;</p>
+<blockquote>
+<p>&#x5176;&#x4F5C;&#x7528;&#x5C31;&#x662F;&#x628A;Flutter&#x63D2;&#x4EF6;&#x5BFC;&#x5165;&#x5230;&#x6211;&#x4EEC;&#x9879;&#x76EE;&#x4E2D;&#x53BB;&#xFF0C;</p>
+<p>&#x5728;<code>.ios</code> &#x76EE;&#x5F55;&#x4E0B;&#x6240;&#x6709;&#x7684;Flutte &#x63D2;&#x4EF6;&#x5C06;&#x4F1A;&#x751F;&#x6210;&#x76F8;&#x5BF9;&#x5E94;&#x7684;pod &#x7EC4;&#x4EF6;&#xFF0C;&#x5728;&#x5BF9;&#x5E94;&#x7684;<code>.symlinks</code> &#x76EE;&#x5F55;&#x4E0B;,&#x901A;&#x8FC7;pod &#x7684;&#x65B9;&#x5F0F;&#x5BFC;&#x5165;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x3002;</p>
+</blockquote>
+<h5 id="5&#x3001;pod-install-&#x5B8C;&#x6210;&#x96C6;&#x6210;"><a name="5&#x3001;pod-install-&#x5B8C;&#x6210;&#x96C6;&#x6210;" class="anchor-navigation-ex-anchor" href="#5&#x3001;pod-install-&#x5B8C;&#x6210;&#x96C6;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>5&#x3001;pod install &#x5B8C;&#x6210;&#x96C6;&#x6210;</h5>
+<p>&#x6700;&#x540E;&#x53EA;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#xFF1A;<code>pod install</code> &#x5C31;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x96C6;&#x6210;&#x5DE5;&#x4F5C;&#x3002;</p>
+<h3 id="&#x4E8C;&#x3001;&#x5982;&#x4F55;&#x4F7F;&#x7528;flutter"><a name="&#x4E8C;&#x3001;&#x5982;&#x4F55;&#x4F7F;&#x7528;flutter" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;&#x5982;&#x4F55;&#x4F7F;&#x7528;flutter"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;&#x5982;&#x4F55;&#x4F7F;&#x7528;Flutter</h3>
+<p>&#x8FD9;&#x91CC;&#x505A;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x793A;&#x8303;&#x4F8B;&#x5B50;:</p>
+<p>&#x901A;&#x8FC7; <code>FlutterViewController</code> &#x6765;&#x5B8C;&#x6210;&#x4ECE;&#x539F;&#x751F;&#x5230;flutter &#x7684;&#x8DF3;&#x8F6C;&#x3002;</p>
+<pre class="language-"><code class="lang-objective-c">FlutterViewController *vc  = [[FlutterViewController alloc] init];
+ [vc setInitialRoute:@&quot;FirstView&quot;];
+ [self.navigationController pushViewController:vc animated:YES];
+</code></pre>
+<p>&#x5176;&#x4E2D; <code>FirstView</code>  &#x662F;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;&#xFF0C;&#x7528;&#x4E8E;&#x5728;flutter &#x4E2D;&#x5224;&#x65AD;&#x5177;&#x4F53;&#x8DF3;&#x8F6C;&#x5230;&#x54EA;&#x4E2A;&#x9875;&#x9762;Widget</p>
+<pre class="language-"><code class="lang-dart"><span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>defaultRouteName <span class="token operator">==</span><span class="token string">&quot;FirstView&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">runApp</span><span class="token punctuation">(</span><span class="token function">FirstView</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>defaultRouteName <span class="token operator">==</span> <span class="token string">&quot;SecondView&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">runApp</span><span class="token punctuation">(</span><span class="token function">SecondView</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">runApp</span><span class="token punctuation">(</span><span class="token function">FirstView</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x5B8C;&#x6210;&#x4E86;&#x4ECE;&#x539F;&#x751F;&#x5230;flutter &#x7684;&#x4E00;&#x4E2A;&#x8DF3;&#x8F6C;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p><strong><em>&#x4F46;&#x662F;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5728;flutter &#x4F7F;&#x7528;&#x4E86;&#x63D2;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4EC5;&#x4EC5;&#x8FD9;&#x6837;&#x662F;&#x4E0D;&#x591F;&#x7684;&#x3002;</em></strong></p>
+<p>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86;&#x63D2;&#x4EF6;&#xFF0C;&#x5728;iOS&#x4E2D;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x6CE8;&#x518C;&#x8FD9;&#x4E9B;&#x63D2;&#x4EF6;:</p>
+<pre class="language-"><code class="lang-objective-c">#import &lt;UIKit/UIKit.h&gt;
+#import &lt;Flutter/Flutter.h&gt;
+@interface AppDelegate : FlutterAppDelegate
+@property (nonatomic,strong)FlutterEngine *flutterEngine;
+@end
+</code></pre>
+<pre class="language-"><code class="lang-objective-c">#import &quot;AppDelegate.h&quot;
+#import &lt;FlutterPluginRegistrant/GeneratedPluginRegistrant.h&gt;
+
+@interface AppDelegate ()
+
+@end
+
+@implementation AppDelegate
+
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    self.flutterEngine = [[FlutterEngine alloc] initWithName:@&quot;io.flutter&quot; project:nil];
+    [self.flutterEngine runWithEntrypoint:nil];
+    [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine]; 
+    return [super application:application didFinishLaunchingWithOptions:launchOptions];
+}
+</code></pre>
+<pre class="language-"><code class="lang-objective-c"> FlutterEngine *flutterEngine = ((AppDelegate *)[UIApplication sharedApplication].delegate).flutterEngine;
+    FlutterViewController *vc  = [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
+    [vc setInitialRoute:@&quot;FirstView&quot;];
+    [self.navigationController pushViewController:vc animated:YES];
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; eric_dayang  2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x7F16;&#x8F91;&#x65F6;&#x95F4;&#xFF1A;
+2020-05-29 15:03:50
+</span></footer> <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../cocoaPods/cocoaPods.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 私有仓库的创建和使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Flutter快速集成","level":"1.4","depth":1,"previous":{"title":"私有仓库的创建和使用","level":"1.3.1","depth":2,"path":"cocoaPods/cocoaPods.md","ref":"cocoaPods/cocoaPods.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","donate@^1.0.2","local-video@^1.0.1","sitemap-general@^0.1.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","3-ba@^0.9.0","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","puml@^1.0.1","musicxml@^1.0.2","klipse@^1.2.0","versions-select@^0.1.1","rss@^3.0.2","-sharing","sharing-plus@^0.0.2","graph@^0.1.0","chart@^0.2.0"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © eric_dayang  2017","modify_label":"编辑时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"include-csv":{},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"emphasize":{},"ace":{},"github":{"url":"https://github.com/zhangjikai/gitbook-use"},"puml":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"versions-select":{"type":"branches"},"graph":{},"donate":{"alipay":"https://zhangjikai.com/resource/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://zhangjikai.com/resource/weixin.png","wechatText":"微信打赏"},"sitemap-general":{"prefix":"http://gitbook.zhangjikai.com"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["gitbook"],"title":"GitBook 使用教程","description":"记录 GitBook 的配置和一些插件的使用","author":"Jikai Zhang","feed_url":"http://gitbook.zhangjikai.com/rss","site_url":"http://gitbook.zhangjikai.com/","managingEditor":"me@zhangjikai.com","webMaster":"me@zhangjikai.com"},"musicxml":{},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"zhangjikai/gitbook-use","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"expandable-chapters-small":{},"local-video":{},"klipse":{"myConfigKey":"it's the default value"},"versions":{"options":[{"value":"http://gitbook.zhangjikai.com","text":"v3.2.3"},{"value":"http://gitbook.zhangjikai.com/v2/","text":"v2.6.4"}]},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"Edit This Page","base":"https://github.com/zhangjikai/gitbook-use/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"eric_dayang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook 使用教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://www.baidu.com"}},"gitbook":"3.2.3","description":"记录 GitBook 的配置和一些插件的使用"},"file":{"path":"flutter/iOS 原生集成Flutter的简单流程.md","mtime":"2020-05-29T07:03:50.403Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-29T08:10:08.497Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/osmd.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/musicxml.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/promise.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-rss/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

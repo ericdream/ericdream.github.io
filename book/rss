@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[GitBook 使用教程]]></title>
+        <description><![CDATA[记录 GitBook 的配置和一些插件的使用]]></description>
+        <link>http://gitbook.zhangjikai.com/</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Fri, 29 May 2020 08:10:12 GMT</lastBuildDate>
+        <atom:link href="http://gitbook.zhangjikai.com/rss" rel="self" type="application/rss+xml"/>
+        <author><![CDATA[Jikai Zhang]]></author>
+        <managingEditor><![CDATA[me@zhangjikai.com]]></managingEditor>
+        <webMaster><![CDATA[me@zhangjikai.com]]></webMaster>
+        <category><![CDATA[gitbook]]></category>
+        <item>
+            <title><![CDATA[简介]]></title>
+            <link>http://gitbook.zhangjikai.com/</link>
+            <guid isPermaLink="true">http://gitbook.zhangjikai.com/</guid>
+            <dc:creator><![CDATA[Jikai Zhang]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Introduction]]></title>
+            <link>http://gitbook.zhangjikai.com/1/README.html</link>
+            <guid isPermaLink="true">http://gitbook.zhangjikai.com/1/README.html</guid>
+            <dc:creator><![CDATA[Jikai Zhang]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[参考]]></description>
+            <link>http://gitbook.zhangjikai.com/git/git_to_git.html</link>
+            <guid isPermaLink="true">http://gitbook.zhangjikai.com/git/git_to_git.html</guid>
+            <dc:creator><![CDATA[Jikai Zhang]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[cocoaPods 私有仓库的创建和使用]]></title>
+            <description><![CDATA[直接在git上创建一个空的pod仓库即可，]]></description>
+            <link>http://gitbook.zhangjikai.com/cocoaPods/cocoaPods.html</link>
+            <guid isPermaLink="true">http://gitbook.zhangjikai.com/cocoaPods/cocoaPods.html</guid>
+            <dc:creator><![CDATA[Jikai Zhang]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[集成的方式一般有两种：手动导入和pods 自动导入。]]></description>
+            <link>http://gitbook.zhangjikai.com/flutter/iOS 原生集成Flutter的简单流程.html</link>
+            <guid isPermaLink="true">http://gitbook.zhangjikai.com/flutter/iOS 原生集成Flutter的简单流程.html</guid>
+            <dc:creator><![CDATA[Jikai Zhang]]></dc:creator>
+        </item>
+    </channel>
+</rss>
