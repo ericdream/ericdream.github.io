@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://package.lanxin.cn/client/ios/LanxinIos_GFYHLanXin_com.lite.tjlanxin_8.1.1017-4456_20220822183201_v8.1.1017.1-GFYHLanXin_b450823_ajsf.ipa</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>url</key>
+					<string>https://p0.ssl.qhimg.com/t011614e6569083d3da.png?size=138x138</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+					<key>url</key>
+					<string>https://p0.ssl.qhimg.com/t011614e6569083d3da.png?size=138x138</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.lite.tjlanxin</string>
+				<key>bundle-version</key>
+				<string>8.1.1017-4456</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>title</key>
+				<string>蓝信+</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
